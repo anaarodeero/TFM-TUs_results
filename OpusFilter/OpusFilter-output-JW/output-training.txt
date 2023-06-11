@@ -1,0 +1,25 @@
+INFO:opusfilter.opusfilter:Best model has CE: 0.0027926305757441116
+INFO:opusfilter.opusfilter:And feature cutoffs: 
+	('CrossEntropyFilter.0', 0.0014411518807585589)
+	('CrossEntropyFilter.1', 0.0005902958103587057)
+	('LanguageIDFilter.cld2.0', 0.04096)
+	('LanguageIDFilter.cld2.1', 0.08)
+	('LanguageIDFilter.langid.0', 0.08)
+	('LanguageIDFilter.langid.1', 0.0512)
+	('LengthRatioFilter.char', 0.026214400000000006)
+	('LengthRatioFilter.word', 0.1)
+	('WordAlignFilter.0', 0.0001934281311383407)
+	('WordAlignFilter.1', 9.903520314283045e-05)
+INFO:opusfilter.opusfilter:And weights: 
+	('(intercept)', 2.022062314732047)
+	('CrossEntropyFilter.0', 0.3115769809945743)
+	('CrossEntropyFilter.1', -0.07720846437704434)
+	('LanguageIDFilter.cld2.0', 0.1373464930623425)
+	('LanguageIDFilter.cld2.1', 0.02978758839591807)
+	('LanguageIDFilter.langid.0', 21.111608751253733)
+	('LanguageIDFilter.langid.1', 0.06263052957085449)
+	('LengthRatioFilter.char', 0.014211155629579326)
+	('LengthRatioFilter.word', -0.1639012213209117)
+	('WordAlignFilter.0', -0.3943795222196379)
+	('WordAlignFilter.1', 0.0986291772779447)
+INFO:opusfilter.opusfilter:Saving best model to OpusFilter-output-JW/ce_model
