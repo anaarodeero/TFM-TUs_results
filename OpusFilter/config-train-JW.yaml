@@ -1,0 +1,145 @@
+common:
+
+  output_directory: OpusFilter-output-JW
+
+steps:
+
+  - type: filter
+    parameters:
+      inputs: [JW300.en.gz, JW300.es.gz]
+      outputs: [filtered.en.gz, filtered.es.gz]
+      filters:
+        - LengthFilter:
+            unit: word
+            min_length: 1
+            max_length: 100
+
+        - LengthRatioFilter:
+            unit: word
+            threshold: 3
+
+        - LongWordFilter:
+            threshold: 40
+
+        - CharacterScoreFilter:
+            scripts: [Latin, Latin]
+            thresholds: [1, 1]
+#7           
+  - type: concatenate
+    parameters:
+      inputs:
+      - JW300.en.gz
+      - JW300.es.gz
+      output: concatenated.gz
+#8
+  - type: train_ngram
+    parameters:
+      data: concatenated.gz
+      parameters:
+        norder: 5
+        dscale: 1
+      model: bg.arpa.gz
+#9           
+  - type: train_ngram
+    parameters:
+      data: filtered.en.gz
+      parameters:
+        norder: 15
+        dscale: 0.1
+      model: en.arpa.gz
+#10
+  - type: train_ngram
+    parameters:
+      data: filtered.es.gz
+      parameters:
+        norder: 15
+        dscale: 0.1
+      model: es.arpa.gz
+#11      
+  - type: train_alignment
+    parameters:
+      src_data: filtered.en.gz
+      tgt_data: filtered.es.gz
+      parameters:
+        src_tokenizer: [moses, en]
+        tgt_tokenizer: [moses, es]
+        model: 3
+      output: align.priors
+
+#12
+  - type: score
+    parameters:
+      inputs: [JW300.en.gz, JW300.es.gz]
+      output: JW300-scores.es-en.jsonl.gz
+      filters: &scorefilt
+
+        - LengthRatioFilter:
+            name: char
+            unit: char
+
+        - LengthRatioFilter:
+            name: word
+            unit: word
+            
+        - LanguageIDFilter:
+            name: langid
+            id_method: langid
+            languages: [en, es]
+
+        - LanguageIDFilter:
+            name: cld2
+            id_method: cld2
+            languages: [en, es]
+            
+        - TerminalPunctuationFilter: {}
+
+        - NonZeroNumeralsFilter: {}
+        
+        - CrossEntropyFilter:
+            lm_params:
+              - filename: en.arpa.gz
+                interpolate:
+                - [bg.arpa.gz, 0.01]
+              - filename: es.arpa.gz
+                interpolate:
+                - [bg.arpa.gz, 0.01]
+        
+        - WordAlignFilter:
+            src_tokenizer: [moses, en]
+            tgt_tokenizer: [moses, es]
+            model: 3
+            priors: align.priors
+
+#13      
+  - type: train_classifier
+    parameters:
+        training_scores: JW300-scores.es-en.jsonl.gz
+        criterion: CE
+        model_type: LogisticRegression
+        model_parameters:
+            solver: liblinear
+        model: ce_model
+        features:
+            LengthRatioFilter:
+                clean-direction: high
+                quantiles: &def_quant
+                    min: 0
+                    max: 0.2
+                    initial: 0.1
+            LanguageIDFilter:
+                clean-direction: high
+                quantiles: *def_quant
+            CrossEntropyFilter:
+                clean-direction: low
+                quantiles: *def_quant
+            NonZeroNumeralsFilter:
+                clean-direction: high
+                quantiles: *def_quant
+            TerminalPunctuationFilter:
+                clean-direction: high
+                quantiles: *def_quant
+            WordAlignFilter:
+                clean-direction: low
+                quantiles: *def_quant
+
+
