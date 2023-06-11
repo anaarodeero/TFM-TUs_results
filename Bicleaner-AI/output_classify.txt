@@ -1,0 +1,20 @@
+Clasification direct_data
+2023-06-06 19:42:24,715 - WARNING - Porn removal not present in metadata, disabling
+2023-06-06 19:42:24,715 - INFO - Arguments processed
+2023-06-06 19:42:24,715 - INFO - Starting process
+2023-06-06 19:46:16,782 - INFO - Finished
+2023-06-06 19:46:16,782 - INFO - Total: 100000 rows
+2023-06-06 19:46:16,782 - INFO - Elapsed time 232.07 s
+2023-06-06 19:46:16,782 - INFO - Troughput: 430 rows/s
+2023-06-06 19:46:16,782 - INFO - Program finished
+------------------------
+Clasification my_data
+2023-06-06 19:46:21,969 - WARNING - Porn removal not present in metadata, disabling
+2023-06-06 19:46:21,969 - INFO - Arguments processed
+2023-06-06 19:46:21,969 - INFO - Starting process
+2023-06-06 19:50:15,572 - INFO - Finished
+2023-06-06 19:50:15,573 - INFO - Total: 100000 rows
+2023-06-06 19:50:15,573 - INFO - Elapsed time 233.60 s
+2023-06-06 19:50:15,573 - INFO - Troughput: 428 rows/s
+2023-06-06 19:50:15,573 - INFO - Program finished
+------------------------

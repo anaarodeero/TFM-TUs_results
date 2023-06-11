@@ -1,0 +1,48 @@
+2023-06-06 15:00:49,632 - INFO - Building training set
+2023-06-06 15:04:24,144 - INFO - Building validation set
+2023-06-06 15:04:33,660 - INFO - Training LM-based fluency filter.
+2023-06-06 15:04:33,660 - INFO - SL & TL LM training corpora have been obtained from tab-separated input file (the same ones used for training the classifier), after randomly removing 2000 sentences.
+2023-06-06 15:04:33,660 - INFO - SL & TL LM dev clean corpora have been randomly selected from input input file (the same used for training the classifier): 2000 sentences.
+2023-06-06 15:05:25,547 - INFO - SL LM dev noisy corpus: /tmp/tmpeo_djej9
+2023-06-06 15:06:03,301 - INFO - TL LM dev noisy corpus: /tmp/tmpeeaa6wuy
+2023-06-06 15:11:02,915 - INFO - Loading training set
+2023-06-06 15:11:14,036 - INFO - Training classifier
+Epoch 1/15
+2000/2000 [==============================] - 380s 182ms/step - loss: 0.3270 - f1: 0.0076 - mcc: 0.0104 - val_loss: 0.1927 - val_f1: 0.0000e+00 - val_mcc: 0.0000e+00
+Epoch 2/15
+2000/2000 [==============================] - 361s 181ms/step - loss: 0.1678 - f1: 0.5515 - mcc: 0.5404 - val_loss: 0.1156 - val_f1: 0.7799 - val_mcc: 0.7649
+Epoch 3/15
+2000/2000 [==============================] - 360s 180ms/step - loss: 0.1100 - f1: 0.7840 - mcc: 0.7615 - val_loss: 0.1038 - val_f1: 0.8184 - val_mcc: 0.8029
+Epoch 4/15
+2000/2000 [==============================] - 360s 180ms/step - loss: 0.1038 - f1: 0.7886 - mcc: 0.7658 - val_loss: 0.0875 - val_f1: 0.8330 - val_mcc: 0.8183
+Epoch 5/15
+2000/2000 [==============================] - 361s 181ms/step - loss: 0.0931 - f1: 0.8164 - mcc: 0.7965 - val_loss: 0.0805 - val_f1: 0.8535 - val_mcc: 0.8393
+Epoch 6/15
+2000/2000 [==============================] - 362s 181ms/step - loss: 0.0913 - f1: 0.8214 - mcc: 0.8015 - val_loss: 0.0696 - val_f1: 0.8652 - val_mcc: 0.8506
+Epoch 7/15
+2000/2000 [==============================] - 362s 181ms/step - loss: 0.0827 - f1: 0.8441 - mcc: 0.8262 - val_loss: 0.0689 - val_f1: 0.8740 - val_mcc: 0.8610
+Epoch 8/15
+2000/2000 [==============================] - 362s 181ms/step - loss: 0.0790 - f1: 0.8505 - mcc: 0.8338 - val_loss: 0.0656 - val_f1: 0.8790 - val_mcc: 0.8660
+Epoch 9/15
+2000/2000 [==============================] - 362s 181ms/step - loss: 0.0752 - f1: 0.8529 - mcc: 0.8367 - val_loss: 0.0626 - val_f1: 0.8802 - val_mcc: 0.8667
+Epoch 10/15
+2000/2000 [==============================] - 360s 180ms/step - loss: 0.0750 - f1: 0.8603 - mcc: 0.8448 - val_loss: 0.0606 - val_f1: 0.8797 - val_mcc: 0.8662
+Epoch 11/15
+2000/2000 [==============================] - 362s 181ms/step - loss: 0.0730 - f1: 0.8615 - mcc: 0.8460 - val_loss: 0.0619 - val_f1: 0.8825 - val_mcc: 0.8697
+Epoch 12/15
+2000/2000 [==============================] - 361s 180ms/step - loss: 0.0681 - f1: 0.8619 - mcc: 0.8469 - val_loss: 0.0616 - val_f1: 0.8851 - val_mcc: 0.8728
+Epoch 13/15
+2000/2000 [==============================] - 360s 180ms/step - loss: 0.0723 - f1: 0.8629 - mcc: 0.8471 - val_loss: 0.0634 - val_f1: 0.8884 - val_mcc: 0.8769
+Epoch 14/15
+2000/2000 [==============================] - 361s 181ms/step - loss: 0.0687 - f1: 0.8693 - mcc: 0.8549 - val_loss: 0.0606 - val_f1: 0.8857 - val_mcc: 0.8732
+Epoch 15/15
+2000/2000 [==============================] - 361s 180ms/step - loss: 0.0677 - f1: 0.8628 - mcc: 0.8480 - val_loss: 0.0605 - val_f1: 0.8865 - val_mcc: 0.8740
+1241/1241 [==============================] - 49s 37ms/step
+2023-06-06 16:42:46,482 - INFO - Dev precision: 0.855
+2023-06-06 16:42:46,486 - INFO - Dev recall: 0.920
+2023-06-06 16:42:46,489 - INFO - Dev f1: 0.887
+2023-06-06 16:42:46,492 - INFO - Dev mcc: 0.874
+2023-06-06 16:42:46,492 - INFO - Calibrating classifier output
+2023-06-06 16:44:10,371 - INFO - End training
+2023-06-06 16:44:10,385 - INFO - Finished
+2023-06-06 16:44:10,385 - INFO - Elapsed time 6201.18s

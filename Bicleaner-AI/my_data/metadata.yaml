@@ -1,0 +1,29 @@
+bicleaner_ai_version: 2.2.1
+precision_score: 0.796
+recall_score: 0.864
+f1_score: 0.829
+matthews_corr_coef: 0.809
+source_lang: en
+target_lang: es
+source_lm: model.en-es.en
+target_lm: model.en-es.es
+lm_type: CHARACTER
+clean_mean_perp: -1.0190910803132418
+clean_stddev_perp: 0.18650997140342096
+noisy_mean_perp: -4.001272664183029
+noisy_stddev_perp: 0.17022573462521917
+classifier_type: xlmr
+classifier_settings:
+    activation: relu
+    base_model: jplu/tf-xlm-roberta-base
+    batch_size: 16
+    calibration_params: [7.91126919, -2.89055777]
+    epochs: 15
+    loss: binary_crossentropy
+    maxlen: 150
+    model_name: bitextor/bicleaner-ai-full-en-es
+    n_classes: 2
+    n_hidden: 2048
+    patience: 3
+    steps_per_epoch: 2000
+    warmup_steps: 1000
