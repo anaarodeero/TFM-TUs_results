@@ -1,0 +1,33 @@
+2023-06-03 12:08:13,621 - INFO - Training LM-based fluency filter.
+2023-06-03 12:08:13,621 - INFO - SL & TL LM training corpora have been obtained from tab-separated input file (the same ones used for training the classifier), after randomly removing 2000 sentences.
+2023-06-03 12:08:13,621 - INFO - SL & TL LM dev clean corpora have been randomly selected from input input file (the same used for training the classifier): 2000 sentences.
+2023-06-03 12:08:20,586 - INFO - SL LM dev noisy corpus: /tmp/tmpx06gvhy3
+2023-06-03 12:08:24,454 - INFO - TL LM dev noisy corpus: /tmp/tmptzdfe85x
+2023-06-03 12:09:10,302 - INFO - Building training set.
+2023-06-03 12:09:10,302 - INFO - Indexing input file.
+2023-06-03 12:09:10,614 - INFO - Shuffling input sentences.
+2023-06-03 12:09:11,310 - INFO - Building wrong sentences with synthetic method.
+2023-06-03 12:09:28,488 - INFO - Training set built.
+2023-06-03 12:10:24,984 - INFO - Start computing features.
+2023-06-03 12:11:27,415 - INFO - End computing features.
+2023-06-03 12:11:27,546 - INFO - Start training.
+/home/anarodero/Documentos/MUIA/TFM/bicleaner/.env/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py:700: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+2023-06-03 12:26:56,973 - INFO - Top 10 important features: 
+2023-06-03 12:26:56,974 - INFO - 	0.05286: freq12
+2023-06-03 12:26:56,974 - INFO - 	0.04419: poisson2
+2023-06-03 12:26:56,974 - INFO - 	0.03916: poisson1
+2023-06-03 12:26:56,974 - INFO - 	0.02529: length1
+2023-06-03 12:26:56,974 - INFO - 	0.02516: ent2
+2023-06-03 12:26:56,974 - INFO - 	0.02502: npunct_tok1
+2023-06-03 12:26:56,974 - INFO - 	0.02426: ntok2
+2023-06-03 12:26:56,974 - INFO - 	0.02394: length2
+2023-06-03 12:26:56,974 - INFO - 	0.02169: nbasic_latin1
+2023-06-03 12:26:56,974 - INFO - 	0.02063: nlatin1
+2023-06-03 12:27:08,648 - INFO - Best classifier parameters found:
+2023-06-03 12:27:08,648 - INFO - 	 criterion: entropy
+2023-06-03 12:27:08,648 - INFO - 	 n_estimators: 300
+2023-06-03 12:27:10,826 - INFO - End training.
+2023-06-03 12:27:10,829 - INFO - NOT USING RELATIVE PATHS
+2023-06-03 12:27:10,830 - INFO - Finished.
+2023-06-03 12:27:10,830 - INFO - Elapsed time 1138.25s.
