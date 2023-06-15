@@ -1,0 +1,69 @@
+Clasificacion de svm
+2023-06-06 17:00:38,198 - INFO - Accuracy histogram: [0.5001, 0.7389478, 0.7957592, 0.8208642, 0.8316663, 0.824865, 0.80006, 0.7327465, 0.6129226, 0.5277055]
+2023-06-06 17:00:38,203 - INFO - Ideal threshold: 0.4
+2023-06-06 17:00:38,203 - INFO - Porn removal disabled
+2023-06-06 17:00:38,220 - INFO - Arguments processed.
+2023-06-06 17:00:39,318 - INFO - Executing main program...
+2023-06-06 17:00:39,641 - INFO - Start mapping
+2023-06-06 17:00:40,293 - INFO - End mapping
+2023-06-06 17:07:40,142 - INFO - Finished
+2023-06-06 17:07:40,143 - INFO - Total: 100000 rows
+2023-06-06 17:07:40,143 - INFO - Elapsed time 420.82 s
+2023-06-06 17:07:40,143 - INFO - Troughput: 237 rows/s
+2023-06-06 17:07:40,145 - INFO - Program finished
+------------------------
+Clasificacion de nn
+2023-06-06 17:09:05,824 - INFO - Accuracy histogram: [0.5001, 0.7220444, 0.7220444, 0.7610522, 0.7610522, 0.7519504, 0.6665333, 0.6665333, 0.6665333, 0.5582116]
+2023-06-06 17:09:05,824 - INFO - Ideal threshold: 0.3
+2023-06-06 17:09:05,824 - INFO - Porn removal disabled
+2023-06-06 17:09:05,826 - INFO - Arguments processed.
+2023-06-06 17:09:06,268 - INFO - Executing main program...
+2023-06-06 17:09:06,583 - INFO - Start mapping
+2023-06-06 17:09:07,152 - INFO - End mapping
+2023-06-06 17:10:57,067 - INFO - Finished
+2023-06-06 17:10:57,067 - INFO - Total: 100000 rows
+2023-06-06 17:10:57,068 - INFO - Elapsed time 110.80 s
+2023-06-06 17:10:57,068 - INFO - Troughput: 902 rows/s
+2023-06-06 17:10:57,069 - INFO - Program finished
+------------------------
+Clasificacion de nn1
+2023-06-06 17:12:14,457 - INFO - Accuracy histogram: [0.5001, 0.7014403, 0.7014403, 0.7014403, 0.7014403, 0.7014403, 0.7014403, 0.7014403, 0.7014403, 0.7014403]
+2023-06-06 17:12:14,457 - INFO - Ideal threshold: 0.1
+2023-06-06 17:12:14,457 - INFO - Porn removal disabled
+2023-06-06 17:12:14,460 - INFO - Arguments processed.
+2023-06-06 17:12:14,888 - INFO - Executing main program...
+2023-06-06 17:12:15,199 - INFO - Start mapping
+2023-06-06 17:12:15,517 - INFO - End mapping
+2023-06-06 17:14:06,290 - INFO - Finished
+2023-06-06 17:14:06,290 - INFO - Total: 100000 rows
+2023-06-06 17:14:06,291 - INFO - Elapsed time 111.40 s
+2023-06-06 17:14:06,291 - INFO - Troughput: 897 rows/s
+2023-06-06 17:14:06,292 - INFO - Program finished
+------------------------
+Clasificacion de adaboost
+2023-06-06 17:15:23,584 - INFO - Accuracy histogram: [0.5001, 0.5001, 0.5001, 0.5001, 0.5626125, 0.839968, 0.4999, 0.4999, 0.4999, 0.4999]
+2023-06-06 17:15:23,584 - INFO - Ideal threshold: 0.5
+2023-06-06 17:15:23,584 - INFO - Porn removal disabled
+2023-06-06 17:15:23,586 - INFO - Arguments processed.
+2023-06-06 17:15:24,012 - INFO - Executing main program...
+2023-06-06 17:15:24,312 - INFO - Start mapping
+2023-06-06 17:15:24,638 - INFO - End mapping
+2023-06-06 17:16:28,378 - INFO - Finished
+2023-06-06 17:16:28,380 - INFO - Total: 100000 rows
+2023-06-06 17:16:28,380 - INFO - Elapsed time 64.37 s
+2023-06-06 17:16:28,380 - INFO - Troughput: 1553 rows/s
+2023-06-06 17:16:28,381 - INFO - Program finished
+------------------------
+Clasificacion de random_forest
+2023-06-06 17:17:45,801 - INFO - Accuracy histogram: [0.5001, 0.7263453, 0.7718544, 0.825065, 0.8663733, 0.875075, 0.8392679, 0.7587518, 0.6413283, 0.535207]
+2023-06-06 17:17:45,801 - INFO - Ideal threshold: 0.5
+2023-06-06 17:17:45,801 - INFO - Porn removal disabled
+2023-06-06 17:17:45,803 - INFO - Arguments processed.
+2023-06-06 17:17:46,364 - INFO - Executing main program...
+2023-06-06 17:17:46,838 - INFO - Start mapping
+2023-06-06 17:17:48,329 - INFO - End mapping
+2023-06-06 17:19:06,989 - INFO - Finished
+2023-06-06 17:19:06,990 - INFO - Total: 100000 rows
+2023-06-06 17:19:06,990 - INFO - Elapsed time 80.62 s
+2023-06-06 17:19:06,990 - INFO - Troughput: 1240 rows/s
+2023-06-06 17:19:06,990 - INFO - Program finished

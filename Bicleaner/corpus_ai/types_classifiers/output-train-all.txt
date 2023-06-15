@@ -1,0 +1,123 @@
+Entrenamiento de svm
+2023-06-06 12:25:53,124 - INFO - Training LM-based fluency filter.
+2023-06-06 12:25:53,124 - INFO - SL & TL LM training corpora have been obtained from tab-separated input file (the same ones used for training the classifier), after randomly removing 2000 sentences.
+2023-06-06 12:25:53,124 - INFO - SL & TL LM dev clean corpora have been randomly selected from input input file (the same used for training the classifier): 2000 sentences.
+2023-06-06 12:26:00,070 - INFO - SL LM dev noisy corpus: /tmp/tmpk34zimli
+2023-06-06 12:26:03,974 - INFO - TL LM dev noisy corpus: /tmp/tmp984i3ook
+2023-06-06 12:26:51,556 - INFO - Building training set.
+2023-06-06 12:26:51,556 - INFO - Indexing input file.
+2023-06-06 12:26:51,868 - INFO - Shuffling input sentences.
+2023-06-06 12:26:52,561 - INFO - Building wrong sentences with synthetic method.
+2023-06-06 12:27:09,086 - INFO - Training set built.
+2023-06-06 12:28:06,858 - INFO - Start computing features.
+2023-06-06 12:29:08,555 - INFO - End computing features.
+2023-06-06 12:29:08,694 - INFO - Start training.
+2023-06-06 13:47:02,113 - INFO - End training.
+2023-06-06 13:47:02,114 - INFO - NOT USING RELATIVE PATHS
+2023-06-06 13:47:02,114 - INFO - Finished.
+2023-06-06 13:47:02,115 - INFO - Elapsed time 4870.30s.
+------------------------
+Entrenamiento de nn
+2023-06-06 13:47:12,921 - INFO - Training LM-based fluency filter.
+2023-06-06 13:47:12,921 - INFO - SL & TL LM training corpora have been obtained from tab-separated input file (the same ones used for training the classifier), after randomly removing 2000 sentences.
+2023-06-06 13:47:12,921 - INFO - SL & TL LM dev clean corpora have been randomly selected from input input file (the same used for training the classifier): 2000 sentences.
+2023-06-06 13:47:19,866 - INFO - SL LM dev noisy corpus: /tmp/tmpa8a0oyp1
+2023-06-06 13:47:23,728 - INFO - TL LM dev noisy corpus: /tmp/tmpxcg9kh72
+2023-06-06 13:48:09,170 - INFO - Building training set.
+2023-06-06 13:48:09,170 - INFO - Indexing input file.
+2023-06-06 13:48:09,470 - INFO - Shuffling input sentences.
+2023-06-06 13:48:10,165 - INFO - Building wrong sentences with synthetic method.
+2023-06-06 13:48:26,732 - INFO - Training set built.
+2023-06-06 13:49:22,108 - INFO - Start computing features.
+2023-06-06 13:50:21,322 - INFO - End computing features.
+2023-06-06 13:50:21,443 - INFO - Start training.
+2023-06-06 13:50:30,970 - INFO - End training.
+2023-06-06 13:50:30,971 - INFO - NOT USING RELATIVE PATHS
+2023-06-06 13:50:30,971 - INFO - Finished.
+2023-06-06 13:50:30,971 - INFO - Elapsed time 199.09s.
+------------------------
+Entrenamiento de nn1
+2023-06-06 13:50:37,479 - INFO - Training LM-based fluency filter.
+2023-06-06 13:50:37,479 - INFO - SL & TL LM training corpora have been obtained from tab-separated input file (the same ones used for training the classifier), after randomly removing 2000 sentences.
+2023-06-06 13:50:37,479 - INFO - SL & TL LM dev clean corpora have been randomly selected from input input file (the same used for training the classifier): 2000 sentences.
+2023-06-06 13:50:44,436 - INFO - SL LM dev noisy corpus: /tmp/tmpho4kansb
+2023-06-06 13:50:48,305 - INFO - TL LM dev noisy corpus: /tmp/tmp4cnvbnwz
+2023-06-06 13:51:34,248 - INFO - Building training set.
+2023-06-06 13:51:34,249 - INFO - Indexing input file.
+2023-06-06 13:51:34,552 - INFO - Shuffling input sentences.
+2023-06-06 13:51:35,243 - INFO - Building wrong sentences with synthetic method.
+2023-06-06 13:51:51,810 - INFO - Training set built.
+2023-06-06 13:52:48,026 - INFO - Start computing features.
+2023-06-06 13:53:47,487 - INFO - End computing features.
+2023-06-06 13:53:47,606 - INFO - Start training.
+2023-06-06 13:53:57,191 - INFO - End training.
+2023-06-06 13:53:57,191 - INFO - NOT USING RELATIVE PATHS
+2023-06-06 13:53:57,191 - INFO - Finished.
+2023-06-06 13:53:57,191 - INFO - Elapsed time 200.75s.
+------------------------
+Entrenamiento de adaboost
+2023-06-06 13:54:03,834 - INFO - Training LM-based fluency filter.
+2023-06-06 13:54:03,834 - INFO - SL & TL LM training corpora have been obtained from tab-separated input file (the same ones used for training the classifier), after randomly removing 2000 sentences.
+2023-06-06 13:54:03,834 - INFO - SL & TL LM dev clean corpora have been randomly selected from input input file (the same used for training the classifier): 2000 sentences.
+2023-06-06 13:54:10,662 - INFO - SL LM dev noisy corpus: /tmp/tmp5wxsdo65
+2023-06-06 13:54:14,542 - INFO - TL LM dev noisy corpus: /tmp/tmpxsw9rd8m
+2023-06-06 13:55:00,787 - INFO - Building training set.
+2023-06-06 13:55:00,787 - INFO - Indexing input file.
+2023-06-06 13:55:01,089 - INFO - Shuffling input sentences.
+2023-06-06 13:55:01,781 - INFO - Building wrong sentences with synthetic method.
+2023-06-06 13:55:19,150 - INFO - Training set built.
+2023-06-06 13:56:15,518 - INFO - Start computing features.
+2023-06-06 13:57:14,697 - INFO - End computing features.
+2023-06-06 13:57:14,813 - INFO - Start training.
+2023-06-06 13:57:52,422 - INFO - Top 10 important features: 
+2023-06-06 13:57:52,422 - INFO - 	0.16000: npunct_tok1
+2023-06-06 13:57:52,422 - INFO - 	0.14000: ntok2
+2023-06-06 13:57:52,422 - INFO - 	0.14000: poisson2
+2023-06-06 13:57:52,422 - INFO - 	0.11000: freq12
+2023-06-06 13:57:52,422 - INFO - 	0.08000: maxword2
+2023-06-06 13:57:52,422 - INFO - 	0.04000: comma1
+2023-06-06 13:57:52,422 - INFO - 	0.03000: ent2
+2023-06-06 13:57:52,422 - INFO - 	0.02000: freq22
+2023-06-06 13:57:52,422 - INFO - 	0.02000: poisson1
+2023-06-06 13:57:52,422 - INFO - 	0.02000: cov11
+2023-06-06 13:57:53,247 - INFO - End training.
+2023-06-06 13:57:53,247 - INFO - NOT USING RELATIVE PATHS
+2023-06-06 13:57:53,247 - INFO - Finished.
+2023-06-06 13:57:53,247 - INFO - Elapsed time 230.45s.
+------------------------
+Entrenamiento de random_forest
+2023-06-06 13:57:59,864 - INFO - Training LM-based fluency filter.
+2023-06-06 13:57:59,864 - INFO - SL & TL LM training corpora have been obtained from tab-separated input file (the same ones used for training the classifier), after randomly removing 2000 sentences.
+2023-06-06 13:57:59,864 - INFO - SL & TL LM dev clean corpora have been randomly selected from input input file (the same used for training the classifier): 2000 sentences.
+2023-06-06 13:58:06,788 - INFO - SL LM dev noisy corpus: /tmp/tmpbb9usymr
+2023-06-06 13:58:10,682 - INFO - TL LM dev noisy corpus: /tmp/tmpoz3apoyg
+2023-06-06 13:58:57,422 - INFO - Building training set.
+2023-06-06 13:58:57,423 - INFO - Indexing input file.
+2023-06-06 13:58:57,734 - INFO - Shuffling input sentences.
+2023-06-06 13:58:58,454 - INFO - Building wrong sentences with synthetic method.
+2023-06-06 13:59:15,278 - INFO - Training set built.
+2023-06-06 14:00:11,689 - INFO - Start computing features.
+2023-06-06 14:01:12,009 - INFO - End computing features.
+2023-06-06 14:01:12,128 - INFO - Start training.
+/home/anarodero/Documentos/MUIA/TFM/bicleaner/.env/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py:700: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+2023-06-06 14:33:13,861 - INFO - Top 10 important features: 
+2023-06-06 14:33:13,862 - INFO - 	0.07717: freq12
+2023-06-06 14:33:13,862 - INFO - 	0.06714: poisson2
+2023-06-06 14:33:13,862 - INFO - 	0.05387: poisson1
+2023-06-06 14:33:13,862 - INFO - 	0.04755: npunct_tok1
+2023-06-06 14:33:13,862 - INFO - 	0.02917: ent2
+2023-06-06 14:33:13,862 - INFO - 	0.02492: ntok2
+2023-06-06 14:33:13,862 - INFO - 	0.02486: avg_tok_l2
+2023-06-06 14:33:13,862 - INFO - 	0.02460: uppercase2
+2023-06-06 14:33:13,862 - INFO - 	0.02299: length2
+2023-06-06 14:33:13,862 - INFO - 	0.02214: freq11
+2023-06-06 14:33:21,780 - INFO - Best classifier parameters found:
+2023-06-06 14:33:21,780 - INFO - 	 criterion: entropy
+2023-06-06 14:33:21,780 - INFO - 	 n_estimators: 400
+2023-06-06 14:33:23,391 - INFO - End training.
+2023-06-06 14:33:23,392 - INFO - NOT USING RELATIVE PATHS
+2023-06-06 14:33:23,393 - INFO - Finished.
+2023-06-06 14:33:23,393 - INFO - Elapsed time 2124.58s.
+------------------------
+
