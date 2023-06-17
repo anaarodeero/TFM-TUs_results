@@ -3,7 +3,7 @@
 l1=en
 l2=es
 
-bicleaner-train corpus-train-100k.$l1-$l2 \
+bicleaner-train ../corpus-train-100k.$l1-$l2 \
     --normalize_by_length \
     --relative_paths \
     -s $l1 -t $l2 \

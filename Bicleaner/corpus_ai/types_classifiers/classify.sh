@@ -3,7 +3,7 @@
 l1=en
 l2=es
 
-for dir in svm nn nn1 adaboost random_forest; do
+#for dir in svm nn nn1 adaboost random_forest extra_trees; do
 
 	echo "Clasificacion de $dir"
 	

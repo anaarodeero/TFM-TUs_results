@@ -1,0 +1,28 @@
+Clasificacion de noise_heuristic_rules
+2023-06-06 19:38:09,539 - INFO - Accuracy histogram: [0.5001, 0.709942, 0.7577516, 0.794959, 0.8330666, 0.854971, 0.8272655, 0.6956391, 0.544809, 0.5005001]
+2023-06-06 19:38:09,550 - INFO - Ideal threshold: 0.5
+2023-06-06 19:38:09,550 - INFO - Porn removal disabled
+2023-06-06 19:38:09,564 - INFO - Arguments processed.
+2023-06-06 19:38:11,383 - INFO - Executing main program...
+2023-06-06 19:38:11,796 - INFO - Start mapping
+2023-06-06 19:38:14,109 - INFO - End mapping
+2023-06-06 19:39:48,999 - INFO - Finished
+2023-06-06 19:39:49,000 - INFO - Total: 100000 rows
+2023-06-06 19:39:49,000 - INFO - Elapsed time 97.61 s
+2023-06-06 19:39:49,000 - INFO - Troughput: 1024 rows/s
+2023-06-06 19:39:49,001 - INFO - Program finished
+-----------------------
+Clasificacion de synthetic_noise
+2023-06-06 19:41:36,178 - INFO - Accuracy histogram: [0.5001, 0.7188438, 0.7610522, 0.7993599, 0.829966, 0.8552711, 0.8274655, 0.7029406, 0.5557111, 0.5016003]
+2023-06-06 19:41:36,178 - INFO - Ideal threshold: 0.5
+2023-06-06 19:41:36,178 - INFO - Porn removal disabled
+2023-06-06 19:41:36,179 - INFO - Arguments processed.
+2023-06-06 19:41:37,056 - INFO - Executing main program...
+2023-06-06 19:41:37,676 - INFO - Start mapping
+2023-06-06 19:41:39,733 - INFO - End mapping
+2023-06-06 19:43:03,115 - INFO - Finished
+2023-06-06 19:43:03,115 - INFO - Total: 100000 rows
+2023-06-06 19:43:03,115 - INFO - Elapsed time 86.06 s
+2023-06-06 19:43:03,115 - INFO - Troughput: 1162 rows/s
+2023-06-06 19:43:03,116 - INFO - Program finished
+-----------------------

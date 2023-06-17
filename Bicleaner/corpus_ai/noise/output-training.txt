@@ -1,0 +1,69 @@
+Entrenamiento de noise_heuristic_rules
+2023-06-17 14:51:09,575 - INFO - Training LM-based fluency filter.
+2023-06-17 14:51:09,575 - INFO - SL & TL LM training corpora have been obtained from tab-separated input file (the same ones used for training the classifier), after randomly removing 2000 sentences.
+2023-06-17 14:51:09,575 - INFO - SL & TL LM dev clean corpora have been randomly selected from input input file (the same used for training the classifier): 2000 sentences.
+2023-06-17 14:51:12,946 - INFO - SL LM dev noisy corpus: mono_noise.en
+2023-06-17 14:51:12,946 - INFO - TL LM dev noisy corpus: mono_noise.es
+2023-06-17 14:52:02,986 - INFO - Building training set.
+2023-06-17 14:52:02,986 - INFO - Indexing input file.
+2023-06-17 14:52:03,291 - INFO - Shuffling input sentences.
+2023-06-17 14:52:03,982 - INFO - Building wrong sentences with synthetic method.
+2023-06-17 14:52:20,469 - INFO - Training set built.
+2023-06-17 14:53:23,751 - INFO - Start computing features.
+2023-06-17 14:54:29,406 - INFO - End computing features.
+2023-06-17 14:54:29,540 - INFO - Start training.
+2023-06-17 15:10:30,676 - INFO - Top 10 important features: 
+2023-06-17 15:10:30,676 - INFO - 	0.05382: freq12
+2023-06-17 15:10:30,676 - INFO - 	0.04393: poisson2
+2023-06-17 15:10:30,676 - INFO - 	0.03794: poisson1
+2023-06-17 15:10:30,677 - INFO - 	0.02629: length1
+2023-06-17 15:10:30,677 - INFO - 	0.02537: ent2
+2023-06-17 15:10:30,677 - INFO - 	0.02474: npunct_tok1
+2023-06-17 15:10:30,677 - INFO - 	0.02434: length2
+2023-06-17 15:10:30,677 - INFO - 	0.02384: ntok2
+2023-06-17 15:10:30,677 - INFO - 	0.02182: nbasic_latin1
+2023-06-17 15:10:30,677 - INFO - 	0.02114: nlatin1
+2023-06-17 15:10:49,977 - INFO - Best classifier parameters found:
+2023-06-17 15:10:49,978 - INFO - 	 criterion: entropy
+2023-06-17 15:10:49,978 - INFO - 	 n_estimators: 500
+2023-06-17 15:10:52,243 - INFO - End training.
+2023-06-17 15:10:52,245 - WARNING - source_dictionary is not in the same directory as metadata. Absolute paths will be used instead of relative.
+2023-06-17 15:10:52,245 - INFO - NOT USING RELATIVE PATHS
+2023-06-17 15:10:52,246 - INFO - Finished.
+2023-06-17 15:10:52,246 - INFO - Elapsed time 1183.73s.
+------------------------
+Entrenamiento de synthetic_noise
+2023-06-17 15:11:43,981 - INFO - Training LM-based fluency filter.
+2023-06-17 15:11:43,981 - INFO - SL & TL LM training corpora have been obtained from tab-separated input file (the same ones used for training the classifier), after randomly removing 2000 sentences.
+2023-06-17 15:11:43,981 - INFO - SL & TL LM dev clean corpora have been randomly selected from input input file (the same used for training the classifier): 2000 sentences.
+2023-06-17 15:11:47,352 - INFO - SL LM dev noisy corpus: mono_noise.en
+2023-06-17 15:11:47,352 - INFO - TL LM dev noisy corpus: mono_noise.es
+2023-06-17 15:12:34,085 - INFO - Building training set.
+2023-06-17 15:12:34,085 - INFO - Indexing input file.
+2023-06-17 15:12:34,383 - INFO - Shuffling input sentences.
+2023-06-17 15:12:35,075 - INFO - Building wrong sentences with synthetic method.
+2023-06-17 15:12:52,504 - INFO - Training set built.
+2023-06-17 15:13:50,519 - INFO - Start computing features.
+2023-06-17 15:14:53,113 - INFO - End computing features.
+2023-06-17 15:14:53,232 - INFO - Start training.
+2023-06-17 15:30:35,491 - INFO - Top 10 important features: 
+2023-06-17 15:30:35,491 - INFO - 	0.05423: freq12
+2023-06-17 15:30:35,491 - INFO - 	0.04260: poisson2
+2023-06-17 15:30:35,491 - INFO - 	0.03886: poisson1
+2023-06-17 15:30:35,491 - INFO - 	0.02555: length1
+2023-06-17 15:30:35,492 - INFO - 	0.02552: ent2
+2023-06-17 15:30:35,492 - INFO - 	0.02498: npunct_tok1
+2023-06-17 15:30:35,492 - INFO - 	0.02466: ntok2
+2023-06-17 15:30:35,492 - INFO - 	0.02418: length2
+2023-06-17 15:30:35,492 - INFO - 	0.02189: nbasic_latin1
+2023-06-17 15:30:35,492 - INFO - 	0.02017: nlatin1
+2023-06-17 15:30:50,902 - INFO - Best classifier parameters found:
+2023-06-17 15:30:50,902 - INFO - 	 criterion: entropy
+2023-06-17 15:30:50,902 - INFO - 	 n_estimators: 400
+2023-06-17 15:30:52,808 - INFO - End training.
+2023-06-17 15:30:52,809 - WARNING - source_dictionary is not in the same directory as metadata. Absolute paths will be used instead of relative.
+2023-06-17 15:30:52,809 - INFO - NOT USING RELATIVE PATHS
+2023-06-17 15:30:52,809 - INFO - Finished.
+2023-06-17 15:30:52,809 - INFO - Elapsed time 1149.88s.
+------------------------
+

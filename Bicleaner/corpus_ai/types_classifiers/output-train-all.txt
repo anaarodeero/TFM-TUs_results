@@ -120,4 +120,40 @@ Entrenamiento de random_forest
 2023-06-06 14:33:23,393 - INFO - Finished.
 2023-06-06 14:33:23,393 - INFO - Elapsed time 2124.58s.
 ------------------------
+Entrenamiento de extra_trees
+2023-06-17 12:48:40,463 - INFO - Training LM-based fluency filter.
+2023-06-17 12:48:40,463 - INFO - SL & TL LM training corpora have been obtained from tab-separated input file (the same ones used for training the classifier), after randomly removing 2000 sentences.
+2023-06-17 12:48:40,463 - INFO - SL & TL LM dev clean corpora have been randomly selected from input input file (the same used for training the classifier): 2000 sentences.
+2023-06-17 12:48:47,383 - INFO - SL LM dev noisy corpus: /tmp/tmpbwbkf3wz
+2023-06-17 12:48:51,335 - INFO - TL LM dev noisy corpus: /tmp/tmp55htmd59
+2023-06-17 12:49:40,868 - INFO - Building training set.
+2023-06-17 12:49:40,870 - INFO - Indexing input file.
+2023-06-17 12:49:41,452 - INFO - Shuffling input sentences.
+2023-06-17 12:49:42,256 - INFO - Building wrong sentences with synthetic method.
+2023-06-17 12:50:01,106 - INFO - Training set built.
+2023-06-17 12:51:08,091 - INFO - Start computing features.
+2023-06-17 12:52:29,731 - INFO - End computing features.
+2023-06-17 12:52:29,857 - INFO - Start training.
+/home/anarodero/Documentos/MUIA/TFM/bicleaner/.env/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py:700: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+2023-06-17 13:10:41,988 - INFO - Top 10 important features: 
+2023-06-17 13:10:41,990 - INFO - 	0.05454: freq12
+2023-06-17 13:10:41,990 - INFO - 	0.04347: poisson2
+2023-06-17 13:10:41,990 - INFO - 	0.03816: poisson1
+2023-06-17 13:10:41,990 - INFO - 	0.02568: length1
+2023-06-17 13:10:41,990 - INFO - 	0.02561: ent2
+2023-06-17 13:10:41,990 - INFO - 	0.02456: npunct_tok1
+2023-06-17 13:10:41,990 - INFO - 	0.02451: length2
+2023-06-17 13:10:41,990 - INFO - 	0.02413: ntok2
+2023-06-17 13:10:41,990 - INFO - 	0.02267: nbasic_latin1
+2023-06-17 13:10:41,990 - INFO - 	0.02049: nlatin1
+2023-06-17 13:11:02,132 - INFO - Best classifier parameters found:
+2023-06-17 13:11:02,132 - INFO - 	 criterion: entropy
+2023-06-17 13:11:02,132 - INFO - 	 n_estimators: 500
+2023-06-17 13:11:09,007 - INFO - End training.
+2023-06-17 13:11:09,010 - INFO - NOT USING RELATIVE PATHS
+2023-06-17 13:11:09,011 - INFO - Finished.
+2023-06-17 13:11:09,011 - INFO - Elapsed time 1349.61s.
+------------------------
+
 
