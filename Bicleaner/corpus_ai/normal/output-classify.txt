@@ -1,0 +1,12 @@
+2023-06-17 17:08:53,894 - INFO - Accuracy histogram: [0.5001, 0.7120424, 0.7577516, 0.7964593, 0.8331666, 0.8540708, 0.8286657, 0.7119424, 0.5565113, 0.5022004]
+2023-06-17 17:08:53,910 - INFO - Ideal threshold: 0.5
+2023-06-17 17:08:53,910 - INFO - Porn removal disabled
+2023-06-17 17:08:53,931 - INFO - Arguments processed.
+2023-06-17 17:08:55,676 - INFO - Executing main program...
+2023-06-17 17:08:56,156 - INFO - Start mapping
+2023-06-17 17:08:58,084 - INFO - End mapping
+2023-06-17 17:10:45,016 - INFO - Finished
+2023-06-17 17:10:45,021 - INFO - Total: 100000 rows
+2023-06-17 17:10:45,021 - INFO - Elapsed time 109.34 s
+2023-06-17 17:10:45,021 - INFO - Troughput: 914 rows/s
+2023-06-17 17:10:45,023 - INFO - Program finished
