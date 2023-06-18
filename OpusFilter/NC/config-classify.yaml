@@ -1,0 +1,55 @@
+common:
+
+  output_directory: OpusFilter-output
+
+steps:
+
+  - type: score
+    parameters:
+      inputs: [JW300.en.gz, JW300.es.gz]
+      output: JW300-scores.es-en.jsonl.gz
+      filters: &scorefilt
+
+        - LengthRatioFilter:
+            name: char
+            unit: char
+
+        - LengthRatioFilter:
+            name: word
+            unit: word
+            
+        - LanguageIDFilter:
+            name: langid
+            id_method: langid
+            languages: [en, es]
+
+        - LanguageIDFilter:
+            name: cld2
+            id_method: cld2
+            languages: [en, es]
+            
+        - TerminalPunctuationFilter: {}
+
+        - NonZeroNumeralsFilter: {}
+        
+        - CrossEntropyFilter:
+            lm_params:
+              - filename: en.arpa.gz
+                interpolate:
+                - [bg.arpa.gz, 0.01]
+              - filename: es.arpa.gz
+                interpolate:
+                - [bg.arpa.gz, 0.01]
+        
+        - WordAlignFilter:
+            src_tokenizer: [moses, en]
+            tgt_tokenizer: [moses, es]
+            model: 3
+            priors: align.priors
+
+  - type: classify
+    parameters:
+        output_probabilities: ce-JW300.es-en.probabilities.txt
+        model: ce_model
+        scores: JW300-scores.es-en.jsonl.gz
+
