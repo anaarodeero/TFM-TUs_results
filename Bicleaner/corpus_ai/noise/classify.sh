@@ -3,7 +3,7 @@
 l1=en
 l2=es
 
-for dir in noise_heuristic_rules synthetic_noise; do
+for dir in noise_heuristic_rules2 synthetic_noise2; do
 
 	echo "Clasificacion de $dir"
 	
