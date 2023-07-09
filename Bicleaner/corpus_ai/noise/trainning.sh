@@ -3,13 +3,13 @@
 l1=en
 l2=es
 
-for dir in noise_heuristic_rules2 synthetic_noise2; do
+for dir in noise_heuristic_rules synthetic_noise; do
 
 	echo "Entrenamiento de $dir"
 	
 	cd $dir
 
-	../../types_classifiers/bicleaner-master/src/bicleaner/bicleaner_train.py ../../corpus-train-100k.$l1-$l2 \
+	bicleaner_train.py ../../corpus-train-100k.$l1-$l2 \
 	    --normalize_by_length \
 	    --relative_paths \
 	    --noisy_examples_file_sl mono_noise.$l1 \
